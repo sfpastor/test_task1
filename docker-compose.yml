@@ -1,0 +1,46 @@
+version: '3.8'
+ 
+services:
+    web:
+      container_name: php-apache-v1  
+      build:
+        context: .
+        dockerfile: Dockerfile
+      volumes:
+        - ./:/var/www      
+      ports:
+        - 8000:80        
+    phpliteadmin:
+      hostname: phpliteadmin
+      container_name: phpliteadmin
+      image: vtacquet/phpliteadmin
+      restart: unless-stopped
+      volumes:
+        - ./var/data:/var/data
+      ports:
+       - "8080:80"
+      environment:
+       - PASSWORD=admin
+       - LOCATION=/var/data
+
+        
+    # db:
+    #   container_name: db
+    #   image: mysql
+    #   restart: always
+    #   environment:
+    #     MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+    #     MYSQL_DATABASE: MYSQL_DATABASE
+    #     MYSQL_USER: MYSQL_USER
+    #     MYSQL_PASSWORD: MYSQL_PASSWORD
+    #   ports:
+    #     - "9906:3306"  
+    # phpmyadmin:
+    #   image: phpmyadmin/phpmyadmin
+    #   ports:
+    #     - '8080:80'
+    #   restart: always
+    #   environment:
+    #     PMA_HOST: db
+    #   depends_on:
+    #     - db       
