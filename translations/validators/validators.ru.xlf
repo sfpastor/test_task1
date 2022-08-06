@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="admin.user.name_in_blacklist">
+                <source>admin.user.name_in_blacklist</source>
+                <target>Имя "{{ string }}" содержит запрещенное слово</target>
+            </trans-unit>
+            <trans-unit id="admin.user.email_in_blacklist">
+                <source>admin.user.email_in_blacklist</source>
+                <target>Домен для имейла "{{ string }}" находится в списке запрещенных</target>
+            </trans-unit>
+            <trans-unit id="admin.user.validator.name.alphanum">
+                <source>admin.user.validator.name.alphanum</source>
+                <target>Имя пользователя может содержать только латинские символы нижнего регистра или цифры</target>
+            </trans-unit>
+            <trans-unit id="admin.user.validator.name.min_lentgh">
+                <source>admin.user.validator.name.min_lentgh</source>
+                <target>Имя пользователя должно быть не меньше {{ limit }} символов</target>
+            </trans-unit>
+            
+            <trans-unit id="admin.user.validator.name.max_lentgh">
+                <source>admin.user.validator.name.max_lentgh</source>
+                <target>Имя пользователя должно быть не больше {{ limit }} символов</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

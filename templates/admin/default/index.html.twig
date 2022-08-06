@@ -3,7 +3,14 @@
 {% block body_id 'admin_index' %}
 
 {% block main %}
-    <h1>{{ 'menu.admin'|trans }}</h1>    
+    <h1>{{ 'menu.admin'|trans }}</h1>
+    
+    <div class="section actions">
+        <a href="{{ path('admin_user_index') }}" class="btn btn-lg btn-block btn-default">
+            <i class="fa fa-cogs" aria-hidden="true"></i> {{ 'title.admin_user_list'|trans }}
+        </a>
+    </div>
+    
     
 {% endblock %}
 

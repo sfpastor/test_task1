@@ -1,0 +1,45 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% block body_id 'admin_user_show' %}
+
+{% block main %}
+    <h1>{{ user.name }}</h1>
+
+    <p class="user-metadata">
+        <span class="metadata"><i class="fa fa-calendar"></i> {{ user.created|format_datetime('long', 'medium', '', 'UTC') }}</span>
+        <span class="metadata"><i class="fa fa-user"></i> {{ user.email }}</span>
+    </p>
+
+    {% if user.deleted %}
+      <p class="user-metadata">
+          <span class="metadata"><i class="fa fa-trash-o"></i> {{ 'label.admin_user_deleted'|trans }} </span>
+          <span class="metadata"> - {{ user.deleted|format_datetime('long', 'medium', '', 'UTC') }}</span>
+      </p>
+    {% endif %}
+
+    
+    {% if user.notes %}
+      {{ user.notes|markdown_to_html|sanitize_html }}      
+    {% endif %}
+    
+    <a href="{{ path('admin_user_index') }}" class="btn btn-link">
+        <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'action.back_to_list'|trans }}
+    </a>    
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="{{ path('admin_user_edit', {id: user.id}) }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.admin_user_edit'|trans }}
+        </a>
+    </div>
+    {% if user.deleted is null %}
+      <div class="section">
+          {{ include('admin/user/_delete_form.html.twig', {user: user}, with_context = false) }}
+      </div>
+    {% endif %}
+    
+    {{ parent() }}
+
+    {# {{ show_source_code(_self) }} #} 
+{% endblock %}

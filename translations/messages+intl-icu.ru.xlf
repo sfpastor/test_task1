@@ -254,7 +254,105 @@
             <trans-unit id="paginator.current">
                 <source>paginator.current</source>
                 <target>(текущая)</target>
-            </trans-unit>                      
+            </trans-unit>         
+            
+            <trans-unit id="label.no">
+                <source>label.no</source>
+                <target>Нет</target>
+            </trans-unit>            
+            <trans-unit id="label.yes">
+                <source>label.yes</source>
+                <target>Да</target>
+            </trans-unit>                        
+            <trans-unit id="admin.user.no_users_found">
+                <source>admin.user.no_users_found</source>
+                <target>Пользователи не найдены</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.created_successfully">
+                <source>admin.user.created_successfully</source>
+                <target>Пользователь успешно создан</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.updated_successfully">
+                <source>admin.user.updated_successfully</source>
+                <target>Пользователь успешно обновлен</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.deleted_successfully">
+                <source>admin.user.deleted_successfully</source>
+                <target>Пользователь успешно удален</target>
+            </trans-unit>          
+            
+            <trans-unit id="action.show_info">
+                <source>action.show_info</source>
+                <target>Показать</target>
+            </trans-unit>          
+            
+            <trans-unit id="title.admin_user_edit">
+                <source>title.admin_user_edit</source>
+                <target>Изменение</target>
+            </trans-unit>          
+            <trans-unit id="action.admin_user_edit">
+                <source>action.admin_user_edit</source>
+                <target>Изменить</target>
+            </trans-unit>          
+            <trans-unit id="title.admin_user_new">
+                <source>title.admin_user_new</source>
+                <target>Новый пользователь</target>
+            </trans-unit>          
+            
+            <trans-unit id="title.admin_user_list">
+                <source>title.admin_user_list</source>
+                <target>Пользователи</target>
+            </trans-unit>          
+            
+            <trans-unit id="modal.admin.delete_record.title">
+                <source>modal.admin.delete_record.title</source>
+                <target>Удалить запись</target>
+            </trans-unit>          
+
+            <trans-unit id="modal.admin.delete_record.body">
+                <source>modal.admin.delete_record.body</source>
+                <target>Действительно удалить эту запись?</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin.delete_record">
+                <source>label.admin.delete_record</source>
+                <target>Удалить</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin_create_user">
+                <source>label.admin_create_user</source>
+                <target>Создать пользователя</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin_user_id">
+                <source>label.admin_user_id</source>
+                <target>ИН</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_name">
+                <source>label.admin_user_name</source>
+                <target>Имя</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_email">
+                <source>label.admin_user_email</source>
+                <target>Имейл</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_notes">
+                <source>label.admin_user_notes</source>
+                <target>Заметки</target>
+            </trans-unit>          
+            
+            <trans-unit id="label.admin_user_created">
+                <source>label.admin_user_created</source>
+                <target>Создан</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_deleted">
+                <source>label.admin_user_deleted</source>
+                <target>Удален</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_is_deleted">
+                <source>label.admin_user_is_deleted</source>
+                <target>Удален?</target>
+            </trans-unit>          
         </body>
     </file>
 </xliff>

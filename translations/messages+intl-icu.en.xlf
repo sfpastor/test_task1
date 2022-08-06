@@ -270,6 +270,105 @@
                 <source>paginator.current</source>
                 <target>(current)</target>
             </trans-unit>
+            
+            
+            <trans-unit id="label.no">
+                <source>label.no</source>
+                <target>No</target>
+            </trans-unit>            
+            <trans-unit id="label.yes">
+                <source>label.yes</source>
+                <target>Yes</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.no_users_found">
+                <source>admin.user.no_users_found</source>
+                <target>No users found</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.created_successfully">
+                <source>admin.user.created_successfully</source>
+                <target>User created successfully</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.updated_successfully">
+                <source>admin.user.updated_successfully</source>
+                <target>User updated successfully</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.deleted_successfully">
+                <source>admin.user.deleted_successfully</source>
+                <target>User deleted successfully</target>
+            </trans-unit>          
+            
+            <trans-unit id="action.show_info">
+                <source>action.show_info</source>
+                <target>Show info</target>
+            </trans-unit>          
+            
+            <trans-unit id="title.admin_user_edit">
+                <source>title.admin_user_edit</source>
+                <target>User edit</target>
+            </trans-unit>          
+            <trans-unit id="action.admin_user_edit">
+                <source>action.admin_user_edit</source>
+                <target>Edit</target>
+            </trans-unit>          
+            <trans-unit id="title.admin_user_new">
+                <source>title.admin_user_new</source>
+                <target>New User</target>
+            </trans-unit>          
+            
+            <trans-unit id="title.admin_user_list">
+                <source>title.admin_user_list</source>
+                <target>Users list</target>
+            </trans-unit>          
+            
+            <trans-unit id="modal.admin.delete_record.title">
+                <source>modal.admin.delete_record.title</source>
+                <target>Delete record</target>
+            </trans-unit>          
+
+            <trans-unit id="modal.admin.delete_record.body">
+                <source>modal.admin.delete_record.body</source>
+                <target>Are you sure you want to delete current record?</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin.delete_record">
+                <source>label.admin.delete_record</source>
+                <target>Delete</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin_create_user">
+                <source>label.admin_create_user</source>
+                <target>Create user</target>
+            </trans-unit>          
+
+            <trans-unit id="label.admin_user_id">
+                <source>label.admin_user_id</source>
+                <target>User ID</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_name">
+                <source>label.admin_user_name</source>
+                <target>Name</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_email">
+                <source>label.admin_user_email</source>
+                <target>Email</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_notes">
+                <source>label.admin_user_notes</source>
+                <target>Notes</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_created">
+                <source>label.admin_user_created</source>
+                <target>Created</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_deleted">
+                <source>label.admin_user_deleted</source>
+                <target>Deleted</target>
+            </trans-unit>          
+            <trans-unit id="label.admin_user_is_deleted">
+                <source>label.admin_user_is_deleted</source>
+                <target>Is deleted</target>
+            </trans-unit>          
+                            
         </body>
     </file>
 </xliff>

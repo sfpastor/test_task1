@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="admin.user.name_in_blacklist">
+                <source>admin.user.name_in_blacklist</source>
+                <target>The name "{{ string }}" contains word from blacklist</target>
+            </trans-unit>            
+            <trans-unit id="admin.user.email_in_blacklist">
+                <source>admin.user.email_in_blacklist</source>
+                <target>The domain for email "{{ string }}" is in blacklist</target>
+            </trans-unit>
+            <trans-unit id="post.slug_unique">
+                <source>post.slug_unique</source>
+                <target>This title was already used in another blog post, but they must be unique.</target>
+            </trans-unit>
+            <trans-unit id="admin.user.validator.name.alphanum">
+                <source>admin.user.validator.name.alphanum</source>
+                <target>The user name must contain only lowercase latin characters and digits.</target>
+            </trans-unit>
+            <trans-unit id="admin.user.validator.name.min_lentgh">
+                <source>admin.user.validator.name.min_lentgh</source>
+                <target>User name must be at least {{ limit }} characters long.</target>
+            </trans-unit>
+            
+            <trans-unit id="admin.user.validator.name.max_lentgh">
+                <source>admin.user.validator.name.max_lentgh</source>
+                <target>User name must be no more than {{ limit }} characters long.</target>
+            </trans-unit>
+            
+        </body>
+    </file>
+</xliff>
