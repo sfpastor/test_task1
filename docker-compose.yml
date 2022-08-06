@@ -16,12 +16,12 @@ services:
       image: vtacquet/phpliteadmin
       restart: unless-stopped
       volumes:
-        - ./var/data:/var/data
+        - ./data:/data
       ports:
        - "8080:80"
       environment:
        - PASSWORD=admin
-       - LOCATION=/var/data
+       - LOCATION=/data
 
         
     # db:
