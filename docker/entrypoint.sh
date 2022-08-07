@@ -4,6 +4,5 @@ composer install -n
 
 bin/console doc:mig:mig --no-interaction
 bin/console --env=test doc:mig:mig --no-interaction
-bin/console --env=test doc:fix:load --no-interaction
  
 exec "$@"
